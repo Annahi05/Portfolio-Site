@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New';
+    background-color: #535373; 
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFA69E; 
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #FAF3DD; 
+    transform: scale(1.1);
+}
+
+section {
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+
+/* About Me */
+section:nth-child(2) { background-color: #e7d8ef; font-weight: 600}  
+/* Projects */
+section:nth-child(3) { background-color: #B8F2E6; } 
+/* Contact */
+section:nth-child(4) { background-color: #AED9E0; font-weight:600 } 
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.project {
+    background-color: #ffffffbb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+}
